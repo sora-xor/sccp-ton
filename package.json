@@ -1,0 +1,17 @@
+{
+  "name": "sccp-ton",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ./scripts/compile.mjs",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "encode-proof-cell": "node ./scripts/encode_sora_proof_cell.mjs",
+    "encode-attester-proof": "node ./scripts/encode_attester_quorum_proof.mjs"
+  },
+  "dependencies": {
+    "@ton/core": "0.63.1",
+    "@ton/sandbox": "0.41.0",
+    "@ton/tolk-js": "1.2.0",
+    "ethers": "^6.16.0"
+  }
+}
